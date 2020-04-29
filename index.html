@@ -9,7 +9,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Permanent+Marker&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -19,7 +19,7 @@
     <!-- My own CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <title>Hello, KIEI-451!</title>
+    <title>potatoTV</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -27,27 +27,28 @@
     <!-- I'm using the "navbar-light" color scheme, and a custom background color, defined in my styles.css -->
     <!-- Because the navbar has a "container" inside, it has gutters (spacing) on the left and right -->
     <!-- https://getbootstrap.com/docs/4.4/components/navbar/#containers -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="K_RGB.png" class="d-inline-block align-middle">
-          KIEI-451
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <!-- The "ml-auto" means - set the left margin as high as you can, automatically -->
-          <!-- This causes the links to move to the right -->
-          <!-- https://getbootstrap.com/docs/4.4/utilities/flex/#auto-margins -->
-          <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="pricing.html">Pricing</a>
-          </div>
-          <div class="navbar-nav ml-auto">
-            <a class="btn btn-outline-info" href="contact.html">Contact Us</a>
-          </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #97b2d9">
+      <a class="navbar-brand" href="https://potato-tv.com/">potato<sup>TV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Careers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://www.netflix.com/">
+          <input class="form-control mr-sm-2" type="search" placeholder="Find content" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </nav>
 
@@ -55,16 +56,21 @@
     <!-- https://getbootstrap.com/docs/4.4/components/jumbotron/ -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Introduction to Software Development</h1 class="display-4">
-        <p class="lead">Helping Kellogg students live the #developerlife, since 2015</p>
-        <a class="btn btn-info btn-lg" href="pricing.html" role="button">Pricing and Plans</a>
+        <h1 class="display-4">Welcome to potato<sup>TV</h1 class="display-4">
+        <p class="lead">Connecting people from their couch</p>
+        <a class="signupbtn btn btn-light btn-lg"
+          style="background-color: #72bf5f"
+          href="pricing.html"
+          role="button"
+          >Our plans
+      </a>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h2>What you'll learn</h2>
+          <h2>Become a potato</h2>
         </div>
       </div>
       <!-- An example of Bootstrap's spacing utility classes -->
@@ -72,19 +78,19 @@
       <!-- The "mt-4" gives you more margin on top, responsively -->
       <div class="row mt-4">
         <div class="col-sm-4 text-center">
-          <h1><i class="fas fa-code"></i></h1>
-          <h5>HTML and CSS</h5>
-          <p>When we're done with you, you'll be able to build websites like a boss. And, you'll finally understand what those "front-end devs" at your company are working on. This is the left column on desktop, #1 when stacked.</p>
+          <h1><i class="fas fa-tv"></i></h1>
+          <h5>Social streaming</h5>
+          <p>Stay home & stay connected. Potato TV allows you to simultaneously stream the same show or movie as your friends. Gone are the days of lonely binge watching.</p>
         </div>
         <div class="col-sm-4 text-center">
-          <h1><i class="fas fa-chart-line"></i></h1>
-          <h5>Data Analytics with SQL</h5>
-          <p>Those "data scientists" will have nothing on you. Grab those databases, build those reports, and uncover those hidden insights like a champ. This is the middle column on desktop, that will stack 2nd from the top.</p>
+          <h1><i class="fas fa-mobile"></i></h1>
+          <h5>A seamless app</h5>
+          <p>Potato TV creates a user-friendly experience that allows you to interact with your friends during the movies & shows you love, across all devices.</p>
         </div>
         <div class="col-sm-4 text-center">
-          <h1><i class="fas fa-code-branch"></i></h1>
-          <h5>Software Engineering</h5>
-          <p>Be able to actually talk to those people who live in the basement of your office. That idea for the cat social network with the $1B valuation you've always had? Time to build it. Right column on desktop and #3 in the stack.</p>
+          <h1><i class="fas fa-users"></i></h1>
+          <h5>Real-time connection</h5>
+          <p>You can find what your friends are watching & jump in with them. With fun messaging and video capabilities, you can stay on the couch & get in the game.</p>
         </div>
       </div>
     </div>
@@ -95,72 +101,39 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h2>People Just Love the Carousel</h2>
-          <p>It works best when the images inside have the same orientation and aspect ratio</p>
+          <img src="./images/logo3.png" class="img-fluid" alt="Responsive image">
+            <h2>Come join the social streaming movement</h2>
         </div>
       </div>
-      <!-- The dreaded carousel -->
-      <div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <!-- The img-fluid class makes the image responsive -->
-            <img src="carnitas.jpg" class="img-fluid" alt="Tacos">
-          </div>
-          <div class="carousel-item">
-            <img src="whiskey.jpg" class="img-fluid" alt="Whiskey">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+      <div class="embed-responsive embed-responsive-16by9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+      <!-- <img src="./images/jumbopic2.jpg" class="img-fluid" alt="Responsive image"> -->
+
     </div>
 
-    <!-- Just a div, with a custom background color -->
-    <div class="testimonials my-4 py-4">
-      <div class="container">
-        <div class="row my-4">
-          <div class="col text-center">
-            <h2>What People Are Saying</h2>
-            <p>Don't just take our word for it</p>
-          </div>
+
+    <div class="row mt-4">
+      <div class="col-sm-4">
         </div>
-        <!-- Media object/media list -->
-        <!-- https://getbootstrap.com/docs/4.4/components/media-object/#media-list -->
-        <ul class="list-unstyled">
-          <li class="media">
-            <img src="https://placekitten.com/200/200" class="mr-3" alt="Pic">
-            <div class="media-body">
-              <blockquote class="blockquote">
-                <p class="mb-0">Before this class, I didn't even like tacos. Thanks for changing my life!!!</p>
-                <footer class="blockquote-footer">Katie, <cite title="Class of 2017">Class of 2016</cite></footer>
-              </blockquote>
-            </div>
-          </li>
-          <li class="media">
-            <img src="https://placem.at/people?w=200&h=200" class="mr-3" alt="Pic">
-            <div class="media-body">
-              <blockquote class="blockquote">
-                <p class="mb-0">Brian and Ben are constantly thinking of innovative ways to incorporate their passion for tacos and kale into their lectures. 100% would recommend!</p>
-                <footer class="blockquote-footer">Brendan, <cite title="Class of 2017">Class of 2018</cite></footer>
-              </blockquote>
-            </div>
-          </li>
-          <li class="media">
-            <img src="https://baconmockup.com/200/200/" class="mr-3" alt="Pic">
-            <div class="media-body">
-              <blockquote class="blockquote">
-                <p class="mb-0">I thought I would go into consulting after Kellogg. After KIEI-451, I'm definitely going into consulting.</p>
-                <footer class="blockquote-footer">Rob, <cite title="Class of 2019">Class of 2017</cite></footer>
-              </blockquote>
-            </div>
-          </li>
-        </ul>
+          <div class="col-sm-4 text-center">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" placeholder="********" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div class="col-sm-4">
+        </div>
       </div>
     </div>
 
@@ -168,18 +141,18 @@
     <div class="container footer">
       <div class="row my-5">
         <div class="col-sm-6">
-          <img src="K_RGB.png">
+          <img src="./images/logo4.png" class="img-fluid" alt="Responsive image">
         </div>
         <div class="col-sm-3">
-          <h6>KIEI-451</h6>
+          <h6>More info</h6>
           <ul class="list-unstyled mt-3">
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html">Plans</a></li>
+            <li><a href="contact.html">Join us</a></li>
           </ul>
         </div>
         <div class="col-sm-3">
-          <h6>Established 2015</h6>
-          <p class="mt-3"><em>For educational purposes only.</em></p>
+          <h6>Established 2020</h6>
+          <p class="mt-3"><em>potato<sup>TV</sup>, inc.</em></p>
         </div>
       </div>
     </div>

@@ -1,15 +1,15 @@
 /* Typography */
 body {
   /* Everything is Raleway */
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 /* Except we're using more specific rules to override the headlines */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', sans-serif;
 }
 /* And the "logo" */
 .navbar-brand {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
 }
 .navbar-brand img {
@@ -17,9 +17,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 30px;
 }
 .navbar-light .navbar-brand {
-  color: red;
+  color: #20235a;
 }
 
+.signupbtn {
+  color: white;
+}
 /* Navbar background color */
 .navbar {
   background-color: white;
@@ -30,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron {
   /* Background */
   background-attachment: fixed;
-  background-image: url(workspace.jpg);
+  background-image: url(./images/jumbopic4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -53,14 +56,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* The pricing */
 .pricing {
-  background-color: #181818;
+  background-color: #FFFFFF;
 }
 .pricing h1 {
-  font-family: 'Permanent Marker', cursive;
-  color: #cccccc;
+  font-family: 'Poppins', sans-serif;
+  color: black;
 }
 
 /* The footer */
 .footer img {
-  width: 100px;
+  width: 200px;
 }
